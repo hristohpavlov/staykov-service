@@ -1,0 +1,25 @@
+STAYKOV SERVICE EOOD
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+Hristo Pavlov
+twitter.com/hristohpavlov
+github.com/hristohpavlov
+____________________________________________________________________________
+
+TECHNOLOGY
+
+React
+Next.js
+Three.js
+Framer Motion
+
+_______________________________________________________________________________
+
+FONTS
+
+Gotham
+Hiragino Kaku Gothic
