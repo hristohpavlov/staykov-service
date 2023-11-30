@@ -40,7 +40,7 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
-const title = 'Инфоирмация за фирмата и как процедираме';
+const title = 'Повече за нас';
 const description =
   'Бла бла информация, бла бла, тука данчо тря да си го оправи. Бла бла информация, бла бла, тука данчо тря да си го оправи';
 const roles = ['Бързо', 'Качествено', 'Евтино'];
@@ -48,7 +48,7 @@ const roles = ['Бързо', 'Качествено', 'Евтино'];
 export const About = () => {
   return (
     <Fragment>
-      <Meta title={title} prefix="Projects" description={description} />
+      <Meta title={title} prefix="Стайков Сървис" description={description} />
       <ProjectContainer className={styles.slice}>
         {/* <ProjectBackground
           src={sliceBackground}
