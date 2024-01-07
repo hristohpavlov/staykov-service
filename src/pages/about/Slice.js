@@ -50,12 +50,12 @@ export const About = () => {
     <Fragment>
       <Meta title={title} prefix="Стайков Сървис" description={description} />
       <ProjectContainer className={styles.slice}>
-        {/* <ProjectBackground
+        <ProjectBackground
           src={sliceBackground}
           srcSet={`${sliceBackground.src} 1280w, ${sliceBackgroundLarge.src} 2560w`}
           placeholder={sliceBackgroundPlaceholder}
           opacity={0.8}
-        /> */}
+        />
         <ProjectHeader
           title={title}
           description={description}
@@ -63,12 +63,12 @@ export const About = () => {
         />
         <ProjectSection padding="top">
           <ProjectSectionContent>
-            {/* <ProjectImage
+            <ProjectImage
               srcSet={[sliceApp, sliceAppLarge]}
               placeholder={sliceAppPlaceholder}
               alt="The Slice web application showing a selected user annotation."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
-            /> */}
+            />
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection>
@@ -84,20 +84,20 @@ export const About = () => {
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
-              {/* <Image
+              <Image
                 className={styles.sidebarImage}
                 srcSet={[sliceSidebarLayers, sliceSidebarLayersLarge]}
                 placeholder={sliceSidebarLayersPlaceholder}
                 alt="The layers sidebar design, now with user profiles."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
-              /> */}
-              {/* <Image
+              />
+              <Image
                 className={styles.sidebarImage}
                 srcSet={[sliceSidebarAnnotations, sliceSidebarAnnotationsLarge]}
                 placeholder={sliceSidebarAnnotationsPlaceholder}
                 alt="Multiple user annotations on a shared layer."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
-              /> */}
+              />
             </div>
           </ProjectSectionColumns>
         </ProjectSection>
@@ -109,18 +109,18 @@ export const About = () => {
               Завършените проекти и дългогодишният ни опит в областта на ремонта на битова техника говорят за нашата професионалност и преданост към клиентите ни. Нашите лицензирани техници разполагат с необходимите знания и умения, за да се справят с всякакви предизвикателства, пред които може да ви изправи неизправна техника.
               </ProjectSectionText>
             </ProjectTextRow>
-            {/* <Image
+            <Image
               srcSet={[sliceSlides, sliceSlidesLarge]}
               placeholder={sliceSlidesPlaceholder}
               alt="The new My Slides tab in slice, showing annotated and favorited slides."
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
-            /> */}
+            />
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection padding="top">
           <ProjectSectionContent className={styles.grid}>
             <div className={styles.gridImage}>
-              {/* <div className={styles.gridBackground}>
+              <div className={styles.gridBackground}>
                 <Image
                   srcSet={[sliceBackgroundBar, sliceBackgroundBarLarge]}
                   placeholder={sliceBackgroundBarPlaceholder}
@@ -136,7 +136,7 @@ export const About = () => {
                   alt="An annotation preview popover with statistics for shape perimeter and area."
                   sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
                 />
-              </div> */}
+              </div>
             </div>
             <div className={styles.gridText}>
               <ProjectSectionHeading>Топ решения</ProjectSectionHeading>
@@ -156,11 +156,11 @@ export const About = () => {
               <ProjectSectionText>
               Свържете се с нас днес и нека помогнем на вашите уреди да функционират отново като нови!</ProjectSectionText>
             </ProjectTextRow>
-            {/* <Image
+            <Image
               src={sliceIrl}
               placeholder={sliceIrlPlaceholder}
               alt="Students at the University of New South Wales using the new collaborative annotation features"
-            /> */}
+            />
           </ProjectSectionContent>
         </ProjectSection>
       </ProjectContainer>
