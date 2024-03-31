@@ -1,8 +1,9 @@
-const mail = require('@sendgrid/mail');
+const formData = require('form-data');
+const Mailgun = require('mailgun.js');
 const createDOMPurify = require('dompurify');
 const { JSDOM } = require('jsdom');
 const cors = require('cors');
-const {SENDGRID_API_KEY} = process.env;
+const {MAILGUN_API_KEY, DOMAIN} = process.env;
 
 const ORIGINS = ['https://staykovservice.com/', 'https://www.staykovservice.com/'];
 const MAX_EMAIL_LENGTH = 512;
@@ -11,7 +12,10 @@ const EMAIL = 'servicestaykov@gmail.com';
 const FROM_EMAIL = 'orders@staykovservice.com';
 const EMAIL_PATTERN = /(.+)@(.+){2,}\.(.+){2,}/;
 
-mail.setApiKey(SENDGRID_API_KEY);
+const mailgun = new Mailgun(formData).client({
+  username: 'api',
+  key: MAILGUN_API_KEY
+});
 
 const window = new JSDOM('').window;
 const DOMPurify = createDOMPurify(window);
@@ -73,7 +77,9 @@ export default async function handler(req, res){
     <p><strong>${email}</strong></p>
     <p>${message}</p>`
   };
-  await mail.send(data);
+  await mailgun.messages.create(DOMAIN, 
+    data
+  )
   return res.status(200).json({ message: 'Съобщението изпратено успешно' });
 } catch(error) {
   console.error('Rejected', error);
