@@ -4,11 +4,11 @@ const { JSDOM } = require('jsdom');
 const cors = require('cors');
 const {SENDGRID_API_KEY} = process.env;
 
-const ORIGINS = ['https://hpavlov.work', 'https://www.hpavlov.work'];
+const ORIGINS = ['https://staykovservice.com/', 'https://www.staykovservice.com/'];
 const MAX_EMAIL_LENGTH = 512;
 const MAX_MESSAGE_LENGTH = 4096;
-const EMAIL = 'hristohpavlov@gmail.com';
-const FROM_EMAIL = 'Portfolio.Inquiry@hpavlov.work';
+const EMAIL = 'servicestaykov@gmail.com';
+const FROM_EMAIL = 'orders@staykovservice.com';
 const EMAIL_PATTERN = /(.+)@(.+){2,}\.(.+){2,}/;
 
 mail.setApiKey(SENDGRID_API_KEY);
@@ -67,7 +67,7 @@ export default async function handler(req, res){
   const data = {
     to: EMAIL,
     from: FROM_EMAIL,
-    subject: `[NEW] Email from ${name}`,
+    subject: `[Стайков Сървис]Нова поръчка от ${name}`,
     text: message,
     html: `
     <p><strong>${email}</strong></p>
