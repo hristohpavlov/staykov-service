@@ -22,14 +22,14 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-  {
-    label: 'Instagram',
-    url: 'https://instagram.com',
-    icon: 'instagram',
-  },
+  // {
+  //   label: 'Instagram',
+  //   url: 'https://instagram.com',
+  //   icon: 'instagram',
+  // },
   {
     label: 'Facebook',
-    url: 'https://www.facebook.com',
+    url: 'https://www.facebook.com/profile.php?id=61558166960976',
     icon: 'facebook',
   },
   // {
